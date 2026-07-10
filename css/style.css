@@ -1,0 +1,44 @@
+/* 
+    css 선택자
+
+    요소를 선택하는 3가지 방법
+
+    class: .
+    id: #
+    tag: 태그 이름
+
+    선택자{
+    스타일 속성을 적용
+    }
+    컨텐츠 - 패딩- 보더 - 마진
+*/
+
+p{ 
+    background-color: lightskyblue;
+    border: 1px solid #111;
+    border-radius: 10px;
+    padding: 10px;
+} 
+
+.red{
+    color: red;
+
+}
+
+#name{
+    color: red;
+
+}
+
+*{
+    margin: 0px;
+}
+
+/* 스타일 우선 순위 - 범위가 좁아질 수록 우선순위
+!important > 인라인 > id > class > type
+*/
+
+p{
+    background-color: #fff;
+    margin: 10px;
+}
