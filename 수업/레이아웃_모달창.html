@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/fe/css/basic.css"> -->
+    <style>
+        /* 구글폰트 https://fonts.google.com/ */
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');/* 구글폰트 사용 준비*/
+        @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Jua&display=swap');
+        /* 
+            qustn tjsdjs
+            --변수명 - 값;
+        */
+        :root{
+            --white: #fff;
+        }
+        .modal-backdrop{
+            /* 전체 고정 검정화면 */
+            background-color: rgba(0, 0, 0, 0.39);
+            inset: 0;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center; /**/
+        }
+        .modal-box{
+            background-color: whitesmoke;
+            width: 400px;
+            padding: 20px;
+            position: relative;
+
+            border-radius: 20px;
+        }
+        .modal-box input{
+            width: 100%;
+        }
+        .modal-close{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+
+            border: none;
+            border-radius: 50%;
+            background-color: rgb(0, 0, 0);
+            font-size: 1rem;
+            color: rgb(255, 255, 255);
+        }
+        .btn{
+
+        }
+        /* .w-100{
+            width: 100%;
+        }
+        .bc-blue{
+            background-color: blue;
+        }
+        .border-none{
+            border: none;
+        }
+        .h-30px{
+            height: 30px;
+        }
+        .fs-large{
+            font-size: 1.2rem;
+        } */
+        
+        #modalTitle{
+            font-family: "Jua", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 2rem;
+        }
+        #modalContent{
+            color: rgb(255, 0, 0);
+            margin-bottom: 20px;
+        }
+        #loginForm{
+            font-family: "Jua", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+        /* 세로 마진이 중첩되는 경우, 큰 쪽으로 표현 */
+        .modal-box h3, .modal-box h6{
+            margin: 0px;
+        }
+        .modal-box h6.mb-20{
+            margin-bottom: 20px;
+
+        }
+        .modal-box input{
+            margin: 10px 10px;
+            height: 30px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+        .show{
+
+        }
+    </style>
+</head>
+
+<body>
+<!-- 모달을 여는 버튼 -->
+<button id="loginTrigger">로그인</button>
+
+<!-- 평소엔 숨겨져 있는 백드롭 + 모달 -->
+<!-- class속성을 여러개 적용 할 경우, 띄어쓰기를 이용해서 연결 -->
+<div class="modal-backdrop show" id="modalBackdrop">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="닫기">&times;
+    </button>
+    <h3 id="modalTitle">로그인
+    </h3>
+    <h6 id="modalContent" class="bm-20">이메일과 비밀번호를 입력하세요
+    </h6>
+
+    <form id="loginForm">
+        <!--  -->
+      <label for="email">이메일
+      </label>
+      <input type="email" id="email" required>
+      <label for="password">비밀번호
+      </label>
+      <input type="password" id="password" required>
+      <button type="submit" class="btn w-100 border none h-30px">로그인
+      </button>
+    </form>
+  </div>
+</div> 
+</body>
+
+</html>
