@@ -5,117 +5,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/숙제/basic.css">
 <!-- 하단 스타일 태그를 채워 문제를 풀어주시면 됩니다.-->
   <style>
-    
-    .wrap{
-      display: flex;
-      flex-direction: column;
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
-    }
 
-    .header{
-      display: flex;
-      flex-direction: column;
-      margin: 1px;
-    }
-
-    .header-top{
-      display: flex;
-      height: 150px;
-    }
-
-    #header-top1{
-      width: 20%;
-      border: 1px solid black;
-    }
-    #header-top2{
-      width: 60%;
-      border: 1px solid black;
-    }
-    #header-top3{
-      width: 20%;
-      border: 1px solid black;
-    }
-
-    .nav{
-      border: 1px solid black;
-      margin: 1px;
-    }
-    #menu{
-      display: flex;
-      gap: 15%;
-      justify-content: center;
-    }
-
-    .content{
-      height: 500px;
-      display: flex;
-      margin: 1px;
-    }
-
-    #content1{
-      width: 30%;
-      border: 1px solid black;
-    }
-    #content2{
-      width: 40%;
-      border: 1px solid black;
-    }
-    #content3{
-      width: 30%;
-      border: 1px solid black;
-    }
-
-    .footer{
-      height: 100px;
-      margin: 1px;
-    }
-
-    #footer1{
-      height: 70%;
-      border: 1px solid black;
-    }
-    #footer2{
-      height: 30%;
-      border: 1px solid black;
-    }
   </style>
 </head>
 
 <body>
   
-  <div class="wrap">
+  <div class="d-flex flex-col max-w-xl w-100 m-center">
 
 
-    <header class="header">
+    <header class="d-flex flex-col">
 
-      <div class="header-top">
-        <div id="header-top1"></div>
-        <div id="header-top2"></div>
-        <div id="header-top3"></div>
+      <div class="d-flex h-50px border m-1">
+        <div id="header-top1" class="w-25 center-all"><a href="/숙제/이광렬_TalkFile_연습문제1.html">홈</a></div>
+        <div id="header-top2" class="w-75"></div>
+        <div id="header-top3" class="w-25 center-all">
+          <ul class="d-flex">
+            <li class=""><a href="">로그인</a></li>
+            <li class=""><a href="">회원가입</a></li>
+            <li class=""><a href="">고객센터</a></li>
+          </ul>
+        </div>
       </div>
 
-      <nav class="nav">
-        <ul id="menu">
-          <li>Java</li>
-          <li>Oracle</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
+      <nav class="border m-1 ">
+        <ul id="menu" class="d-flex gap-15 justify-center" >
+          <li class="menu_item ">
+            <a href="">Java</a>
+            <ul class="submenu">
+              <li><a href="">Java1</a></li>
+              <li><a href="">Java2</a></li>
+              <li><a href="">Java3</a></li>
+              <li><a href="">Java4</a></li>
+            </ul>
+          </li>
+
+          <li class="menu_item">
+            <a href="">Oracle</a>
+            <ul class="submenu">
+              <li><a href="">Oracle1</a></li>
+              <li><a href="">Oracle2</a></li>
+              <li><a href="">Oracle3</a></li>
+              <li><a href="">Oracle4</a></li>
+            </ul>
+          </li>
+
+          <li class="menu_item">
+            <a href="">HTML</a>
+            <ul class="submenu">
+              <li><a href="">HTML1</a></li>
+              <li><a href="">HTML2</a></li>
+              <li><a href="">HTML3</a></li>
+              <li><a href="">HTML4</a></li>
+            </ul>
+          </li>
+
+          <li class="menu_item">
+            <a href="">CSS</a>
+            <ul class="submenu">
+              <li><a href="">CSS1</a></li>
+              <li><a href="">CSS2</a></li>
+              <li><a href="">CSS3</a></li>
+              <li><a href="">CSS4</a></li>
+            </ul>
+          </li>
+
+          <li class="menu_item">
+            <a href="">JavaScript</a>
+            <ul class="submenu">
+              <li><a href="">JavaScript1</a></li>
+              <li><a href="">JavaScript2</a></li>
+              <li><a href="">JavaScript3</a></li>
+              <li><a href="">JavaScript4</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
     
-    <section class="content">
-      <div id="content1"></div>
-      <div id="content2"></div>
-      <div id="content3"></div>
+    <section class="d-flex m-1 border object-cover justify-center ">
+      <div id="content1" class=""></div>
+      <div id="content2" class=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTOzMSztPob8_B8u27wju8Ut0RW7Eh6An1iac0BD5AyA&s=10" alt="공부"></div>
+      <div id="content3" class=""></div>
     </section>
-    <footer class="footer">
-      <div id="footer1"></div>
+    <footer class="m-1">
+      <div id="footer1">
+        <table class="border-1">
+          <thead class="text-center">
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>내용</th>
+              <th>글쓴이</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="text-center">
+            <tr><td>1</td><td>숙제1</td><td>숙제를 합시다.</td><td>이숙제</td><td><button type="submit"><a href="/숙제/숙제2pg.html">상세보기</a></button></td></tr>
+            <tr><td>2</td><td>숙제2</td><td>숙제를 합시다.</td><td>김숙제</td><td><button type="submit"><a href="/숙제/숙제2pg.html">상세보기</a></button></td></tr>
+            <tr><td>3</td><td>숙제3</td><td>숙제를 합시다.</td><td>박숙제</td><td><button type="submit"><a href="/숙제/숙제2pg.html">상세보기</a></button></td></tr>
+            <tr><td>4</td><td>숙제4</td><td>숙제를 합시다.</td><td>심숙제</td><td><button type="submit"><a href="/숙제/숙제2pg.html">상세보기</a></button></td></tr>
+          </tbody>
+        </table>
+      </div>
       <div id="footer2"></div>
     </footer>
   </div>
