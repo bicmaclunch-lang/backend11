@@ -526,11 +526,12 @@ a:link{
 
 a:visited{
    color: purple;
+   
 }
 
 a:hover{
    olor: red;
-   ext-decoration: underline;
+   text-decoration: underline;
 }
 
 a:active{
