@@ -103,7 +103,7 @@ header{
         transform: translateX(0%);
     }
     .nav-menu > li{
-        padding: 5px 20px;
+        padding: 1px 20px;
     }
     .has-submenu{
         position: relative;
